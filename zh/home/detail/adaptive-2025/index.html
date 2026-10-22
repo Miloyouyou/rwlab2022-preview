@@ -6,7 +6,7 @@
     <meta name="rwlab-design" content="editorial-simple-2026">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="上海交通大学机器人焊接智能化技术实验室：机器人感知、焊接智能控制与先进制造研究。">
-    <title> 点云切片与 Transformer 驱动的多层多道自适应路径生成  · 上海交通大学机器人焊接智能化技术实验室</title>
+    <title> 点云切片与 Transformer 驱动的马鞍形焊缝路径—焊速协同生成  · 上海交通大学机器人焊接智能化技术实验室</title>
     <link rel="icon" href="/rwlab2022-preview/assets/newimage/favicon.ico">
     <link rel="stylesheet" href="/rwlab2022-preview/assets/Content/rebuild.css">
     <script src="/rwlab2022-preview/assets/Scripts/site-navigation.js" defer></script>
@@ -29,10 +29,12 @@
 
     <main id="main-content">
 
-<section class="page-head detail-head" data-section="outputs"><div class="site-container"><p class="page-breadcrumb"><a href="/rwlab2022-preview/index.html">首页</a> / 科研与团队</p><span class="section-kicker">SJTU / RWLAB</span><h1>点云切片与 Transformer 驱动的多层多道自适应路径生成</h1><p>Journal of Manufacturing Processes</p></div></section>
+<section class="page-head detail-head" data-section="outputs"><div class="site-container"><p class="page-breadcrumb"><a href="/rwlab2022-preview/index.html">首页</a> / 科研与团队</p><span class="section-kicker">SJTU / RWLAB</span><h1>点云切片与 Transformer 驱动的马鞍形焊缝路径—焊速协同生成</h1><p>A novel robotic multi-layer multi-pass welding adaptive path generation method based on point cloud slicing and Transformer for saddle-shaped weld seams</p></div></section>
 <article class="site-container inner-page content-detail">
 <div class="detail-article">
-<div class="page-meta">2025-03-22 Journal of Manufacturing Processes · 141 · 1578-1594</div><p class="output-authors">Kai Liu, Zhongxi Sheng, Wei Zhang, Zhengbin Zhong, Xiao Yang, Huabin Chen, Runquan Xiao</p><div class="article-body"><p>通过圆柱轴线识别建立点云切片基准，重构坡口截面并生成多层多道路径，再以无解码器 Transformer 根据切片序列预测匹配焊道的焊接速度。</p></div>
+<div class="page-meta">2025 Journal of Manufacturing Processes, 141, 1578–1594</div><p class="output-authors">Kai Liu; Zhongxi Sheng; Wei Zhang; Zhengbin Zhong; Xiao Yang; Huabin Chen; Runquan Xiao</p><div class="article-body"><h2>研究问题</h2><p>马鞍形坡口各处待填充截面不同，怎样同时生成多道焊接路径并匹配局部焊接速度？</p>
+<h2>研究方法</h2><p>通过区域生长分割和 RANSAC 提取管轴，建立点云切片基准并重建坡口特征。根据分层填充策略规划路径，再用无解码器 Transformer 学习切片序列与焊速之间的关系。</p>
+<h2>主要结果</h2><p>论文试件中，25 道路径及相关计算合计耗时 21.917 s，平均每道 0.877 s。路径 RMSE 在 0.5 mm 以内、焊速预测 RMSE 在 0.7 cm/min 以内，并进行了多层多道焊接验证。</p></div>
 </div>
 <p class="publication-reference">DOI: <a href="https://doi.org/10.1016/j.jmapro.2025.03.071" target="_blank" rel="noopener noreferrer">10.1016/j.jmapro.2025.03.071 ↗</a></p>
 </article>

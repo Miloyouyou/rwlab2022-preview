@@ -6,7 +6,7 @@
     <meta name="rwlab-design" content="editorial-simple-2026">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="上海交通大学机器人焊接智能化技术实验室：机器人感知、焊接智能控制与先进制造研究。">
-    <title> 数据-机理驱动的焊接温度场实时预测  · 上海交通大学机器人焊接智能化技术实验室</title>
+    <title> 数据与机理融合驱动的焊接温度场实时预测  · 上海交通大学机器人焊接智能化技术实验室</title>
     <link rel="icon" href="/rwlab2022-preview/assets/newimage/favicon.ico">
     <link rel="stylesheet" href="/rwlab2022-preview/assets/Content/rebuild.css">
     <script src="/rwlab2022-preview/assets/Scripts/site-navigation.js" defer></script>
@@ -29,10 +29,12 @@
 
     <main id="main-content">
 
-<section class="page-head detail-head" data-section="outputs"><div class="site-container"><p class="page-breadcrumb"><a href="/rwlab2022-preview/index.html">首页</a> / 科研与团队</p><span class="section-kicker">SJTU / RWLAB</span><h1>数据-机理驱动的焊接温度场实时预测</h1><p>Journal of Manufacturing Processes</p></div></section>
+<section class="page-head detail-head" data-section="outputs"><div class="site-container"><p class="page-breadcrumb"><a href="/rwlab2022-preview/index.html">首页</a> / 科研与团队</p><span class="section-kicker">SJTU / RWLAB</span><h1>数据与机理融合驱动的焊接温度场实时预测</h1><p>Real-time prediction of temperature field during welding by data-mechanism driving</p></div></section>
 <article class="site-container inner-page content-detail">
 <div class="detail-article">
-<div class="page-meta">2024-11-26 Journal of Manufacturing Processes · 133 · 260-270</div><p class="output-authors">Wenhua Jiao, Da Zhao, Shipin Yang, Xiaowei Xu, Xiang Zhang, Lijuan Li, Huabin Chen</p><div class="article-body"><p>利用熔池表面宽度与电流电压更新热源信息，结合 LSTM 参数估计、有限元数据和 DeepONet 神经算子，实现焊接温度场的快速预测。</p></div>
+<div class="page-meta">2025 Journal of Manufacturing Processes, 133:260–270</div><p class="output-authors">Wenhua Jiao; Da Zhao; Shipin Yang; Xiaowei Xu; Xiang Zhang; Lijuan Li; Huabin Chen</p><div class="article-body"><h2>研究问题</h2><p>完整温度场难以直接测量、有限元计算又较慢，如何利用过程观测快速估计焊件内部与表面温度？</p>
+<h2>研究方法</h2><p>以有限元温度场构造训练数据，用熔池表面宽度序列驱动 LSTM 估计热源参数，再将电流、电压和更新后的热源函数输入 DeepONet。通过学习热传导方程的解算映射，缩短在线推理时间。</p>
+<h2>主要结果</h2><p>相对有限元参考数据，论文测试中的 DeepONet 温度预测平均绝对误差约为 1.12 K，模型推理耗时约为 2.94 ms。该结果体现了数值模型替代计算的速度与精度，不是现场温度传感器的测量精度。</p></div>
 </div>
 <p class="publication-reference">DOI: <a href="https://doi.org/10.1016/j.jmapro.2024.11.069" target="_blank" rel="noopener noreferrer">10.1016/j.jmapro.2024.11.069 ↗</a></p>
 </article>

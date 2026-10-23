@@ -1,0 +1,35 @@
+.briefprogram-table {
+    text-align:center
+}
+    .briefprogram-table .title {
+        line-height: 20pt;
+        margin: 0pt;
+        orphans: 0;
+        text-align: center;
+        font-family: 'Arial Black'; 
+        font-size: 14pt
+    }
+    .briefprogram-table table {
+        border-collapse: collapse;
+        margin: 0 auto;
+
+    }
+        .briefprogram-table table tr {
+            height: 7.25pt;
+        }
+            .briefprogram-table table tr td {
+                border-bottom-color: #000000;
+                border-bottom-style: solid;
+                border-bottom-width: 0.75pt;
+                border-left-color: #000000;
+                border-left-style: solid;
+                border-left-width: 0.75pt;
+                border-right-color: #000000;
+                border-right-style: solid;
+                border-right-width: 0.75pt;
+                border-top-color: #000000;
+                border-top-style: solid;
+                border-top-width: 0.75pt;
+                vertical-align:middle;
+                text-align:center;
+            }

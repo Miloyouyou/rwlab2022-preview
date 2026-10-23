@@ -1,0 +1,108 @@
+*{margin:0;padding:0;
+    text-align: left;
+}
+a{color:#222;}
+body{
+background:#D3E3EA url("1b25a39d110301eabc52.gif") top center no-repeat;
+text-align:center;
+font-family:Arial, Helvetica, sans-serif;
+}
+body#ebody{background-image:url("1b25a39d110301eabc52.gif");}
+h3{font-size:14px;line-height:18px;padding:1px 8px;}
+h3 a{text-decoration:none;display:block;color:#FFFFFF;}
+#container{text-align:left;width:850px;background:url("2019c96622169d0b6d8c.gif") top no-repeat;padding-top:20px;margin:0 auto;margin-top:120px;position:relative;}
+#logo{position:absolute;left:0;top:-120px;}
+#logo a{width:140px;height:120px;display:block;}
+#header{
+width:810px;
+height:35px;
+margin:0 auto;
+background:transparent url("27762d48bc75145b1391.jpg") no-repeat;
+position:relative;
+padding:0 3px;
+vertical-align:middle;
+}
+#header span#news
+{position:absolute;top:5px;left:3px;bottom:2px;width:700px;border-left:4px solid #AB2D31;}
+#header span#news a{line-height:40px;font-size:18px;padding-top:3px;
+text-decoration:none;color:#ddd;}
+#header span#news a:hover{text-decoration:underline;color:#fff;}
+#header a#edirect{position:absolute;right:1px;bottom:-3px;font-size:14px;width:169px;height:3px;line-height:30px;padding-left:20px;background-color:black;color:white;text-decoration:none;}
+#header a#edirect:hover{background-color:#AB2D31;}
+#content{
+	width:816px;
+	padding:0 3px;
+	padding-bottom:30px;
+	background:transparent url("661af68deb76389096f9.png") repeat-y;
+	margin:0 auto;
+}
+#accordion{
+	width:816px;
+	border-top:3px solid #C39A61;
+	border-right:1px solid white;
+	margin:0 auto;
+	float:left;	
+}
+#accordion h3{position:relative;border-top:1px solid #666;border-bottom:1px solid #000;background:#454545;}
+#accordion h3 a{padding:1px 1px 1px 15px;color:#ddd;background:url("0e5de76691a87bd409e0.gif") 20px 2px no-repeat;text-indent:-9999px;}
+#accordion h3.eh3 a{background:url("0990251ed459374644c9.gif") 20px 2px no-repeat;}
+#accordion h3#address a{background-position:20px -18px;}
+#accordion h3#orga a{background-position:20px -38px;}
+#accordion h3#sponsor a{background-position:20px -58px;}
+#accordion h3#notice a{background-position:20px -78px;}
+#accordion h3#prog a{background-position:20px -98px;}
+#accordion h3#report a{background-position:20px -118px;}
+#accordion h3#regist a{background-position:20px -138px;}
+#accordion h3#social a{background-position:20px -158px;}
+#accordion h3#publication a{background-position:20px -178px;}
+#accordion h3#download a{background-position:20px -198px;}
+#accordion h3#link a{background:url("f9e4b5ad505bfe679cf8.gif") 20px 2px no-repeat;}
+#accordion div{
+	color:#444;
+	font-size:14px;
+	line-height:26px;
+	padding:10px;
+	overflow:hidden;
+	border-bottom:4px solid #fff;
+	background-color: #C1FFEB;
+	background-image: url("e3f4dba0f25ed847c5c0.gif");
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+#accordion div a{color:#000;}
+#accordion div#cintrod{background:url("8e06106d4a28f355d900.gif") center 10px no-repeat;padding-top:310px;}
+.ui-accordion .ui-accordion-header .ui-icon{
+left:2px !important;
+top:3px;
+left:-3px;
+position:absolute;
+height:16px;
+width:16px;
+background-image:url("f6cb208562350fc260a5.gif");
+}
+.ui-icon-triangle-1-s{background-position:0 16px;}
+.ui-icon-triangle-1-e{
+
+}
+
+#banner-right{
+	padding: 5px;
+width:797px;
+	float:left;
+	background:#C39A60 url("e3f4dba0f25ed847c5c0.gif") left bottom no-repeat;
+	border-top:3px solid #AB2D31;
+}
+#banner-right h3{padding:0;color:#222;border:0;background:none;}
+#banner-right p
+{color:#010000;font-size:14px;line-height:18px;margin-left:20px;font-family:宋体;
+    width: 410px;
+}
+
+#footer{
+width:812px;
+padding:8px 2px;
+padding-top:10px;
+background:transparent url("a990bfa97da357d55f90.png") top center no-repeat;
+margin:0 auto;
+}
+#footer p{color:#222;font-size:12px;line-height:18px;}

@@ -1499,6 +1499,8 @@
   "/Home/About?userLang=_en": "en/home/about/index.html",
   "/Home/Collaboration": "zh/home/collaboration/index.html",
   "/Home/Collaboration?userLang=_en": "en/home/collaboration/index.html",
+  "/Home/Conferences": "zh/home/conferences/index.html",
+  "/Home/Conferences?userLang=_en": "en/home/conferences/index.html",
   "/Home/Detail/accurate-crossmodal-generation-welding-backface-frontface-2026": "zh/home/detail/accurate-crossmodal-generation-welding-backface-frontface-2026/index.html",
   "/Home/Detail/accurate-crossmodal-generation-welding-backface-frontface-2026?userLang=_en": "en/home/detail/accurate-crossmodal-generation-welding-backface-frontface-2026/index.html",
   "/Home/Detail/adaptive-2025": "zh/home/detail/adaptive-2025/index.html",

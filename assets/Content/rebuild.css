@@ -1,12 +1,23 @@
 /* Original RWLab layout. Blue palette coordinated with the supplied research banner. */
-/* October homepage: two-column editorial boards and a ten-image sliding track. */
+/* Supplied photography: image-only sliding track; each crop keeps its focal point. */
 .home-carousel{line-height:1.6!important;background:#0b3159}
 .home-carousel .hero-viewport{overflow:hidden;width:100%}
-.home-carousel .hero-slide{position:relative;height:min(31.25vw,620px,60vh);width:100%;flex:0 0 100%;overflow:hidden;background:#eef3f7}
+.home-carousel .hero-slide{position:relative;height:min(41.6667vw,720px);width:100%;flex:0 0 100%;overflow:hidden;background:#eef3f7}
 .home-carousel.carousel-ready .hero-slides{display:flex;transition:transform .8s cubic-bezier(.22,.61,.36,1);will-change:transform}
 .home-carousel .hero-slides.no-transition{transition:none}
 .home-carousel .hero-image-link{display:block;width:100%;height:100%;overflow:hidden}
-.home-carousel .hero-slide img{height:100%;width:100%;object-fit:contain;object-position:center}
+.home-carousel .hero-slide img{height:100%;width:100%;object-fit:cover;object-position:center}
+.home-carousel [data-slide-id=materials-f-building] img{object-position:50% 30%}
+.home-carousel [data-slide-id=home-hero] img{object-position:50% 35%}
+.home-carousel [data-slide-id=gallery-kuka] img{object-position:50% 65%}
+.home-carousel [data-slide-id=gallery-workcell] img{object-position:50% 55%}
+.home-carousel [data-slide-id=gallery-fanuc] img{object-position:50% 48%}
+.home-carousel [data-slide-id=gallery-welding] img{object-position:50% 55%}
+.home-carousel [data-slide-id=gallery-shipbuilding] img{object-position:50% 65%}
+.home-carousel [data-slide-id=gallery-sphere] img{object-position:50% 37%}
+.home-carousel [data-slide-id=gallery-dome] img{object-position:50% 20%}
+.home-carousel [data-slide-id=gallery-campus] img{object-position:50% 55%}
+.home-carousel [data-slide-id=gallery-team] img{object-position:50% 60%}
 .home-carousel .hero-illustration img{object-fit:cover;object-position:center 58%}
 .home-carousel .hero-campus{display:grid;grid-template-columns:1fr 1.05fr;align-items:center;background:#eaf0f5}
 .home-carousel .hero-campus .hero-image-link{padding:24px 40px 24px 0}
@@ -15,9 +26,31 @@
 .campus-title h2{font-size:clamp(26px,3vw,48px);line-height:1.5;margin:18px 0;max-width:600px}
 .campus-title p{font-size:clamp(14px,1.4vw,21px);margin:0}
 .slide-caption{position:absolute;bottom:0;left:0;background:#0b3159e8;color:#fff;padding:10px 24px;font-size:18px;max-width:55%;line-height:1.5}
-.home-carousel .hero-controls{z-index:2;bottom:10px;right:20px;gap:2px;padding:3px 5px}
+.home-carousel .hero-controls{z-index:2;bottom:12px;right:50%;transform:translateX(50%);gap:2px;padding:3px 5px}
 .home-carousel .hero-controls button{min-width:30px;min-height:34px}
-.home-carousel .hero-dots{gap:1px}
+.home-carousel .hero-dots{gap:0}
+.home-carousel .hero-controls .hero-dots button{min-width:20px;width:20px;min-height:34px;padding:0;border:0;background:transparent;position:relative}
+.home-carousel .hero-dots button:after{content:'';display:block;width:7px;height:7px;border-radius:50%;background:#ffffff85;margin:auto}
+.home-carousel .hero-dots button[aria-pressed=true]:after{background:#fff;width:9px;height:9px}
+.home-projects{padding-top:36px}
+.home-projects .section-heading{align-items:baseline;margin-bottom:20px}
+.home-projects h2{font-size:29px;margin:0}
+.home-project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.home-project-card{display:flex;flex-direction:column;min-width:0;background:#fff;border:1px solid #e4eaf0}
+.home-project-card:hover{border-color:#155c99}
+.home-project-image{height:225px;background:#f8fafc;display:flex;align-items:center;justify-content:center;padding:12px;border-bottom:1px solid #e4eaf0}
+.home-project-image img{display:block;width:100%;height:100%;object-fit:contain}
+.home-project-copy{padding:20px 22px}
+.home-project-copy h3{font-size:20px;line-height:1.6;margin:0 0 12px;color:#243d56}
+.home-project-copy p{font-size:14px;line-height:1.85;margin:0;color:#526474}
+.project-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 24px;margin:30px 0}
+.project-gallery .project-figure{margin:0;min-width:0}
+.project-figure-wide{grid-column:1 / -1}
+.project-gallery .project-figure:first-child{grid-column:1 / -1}
+.project-gallery a{display:flex;align-items:center;justify-content:center;background:#f7f9fb;padding:12px;min-height:200px}
+.project-gallery img{display:block;width:auto;max-height:520px;object-fit:contain;margin:auto}
+.project-gallery figcaption{font-size:14px;line-height:1.8;color:#526474;margin-top:10px}
+@media(max-width:760px){.home-carousel .hero-slide.hero-photo{height:75vw;min-height:0}.home-carousel .hero-controls{position:absolute!important;bottom:8px;right:50%;padding:2px 3px!important}.home-carousel .hero-controls .hero-dots button{min-width:16px;width:16px}.home-project-grid{grid-template-columns:1fr}.home-projects .section-heading{flex-wrap:wrap;gap:10px}.home-project-image{height:230px}.project-gallery{grid-template-columns:1fr;gap:24px}.project-gallery a{min-height:0;padding:8px}.project-gallery img{max-height:580px}}
 .home-editorial{background:#f3f5f7;padding:28px 0 0}
 .home-board-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:stretch}
 .home-board{background:#fff;padding:27px 30px;min-width:0;border-top:1px solid #e5ebf0}

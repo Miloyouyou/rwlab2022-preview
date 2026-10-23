@@ -36,7 +36,7 @@
     filter();
 })();
 
-/* Automatic horizontal carousel. All ten originals remain available without JS. */
+/* Automatic horizontal carousel. Supplied originals remain available without JS. */
 (function () {
     'use strict';
     document.querySelectorAll('[data-carousel]').forEach(function (root) {
@@ -45,8 +45,8 @@
         var index=0, touchX=null, touchY=null, timer=null, hovered=false, focused=false;
         var track=root.querySelector('.hero-slides'), pause=root.querySelector('[data-slide-pause]');
         var reduced=window.matchMedia('(prefers-reduced-motion: reduce)'), paused=reduced.matches;
+        if(slides.length<2||!track||!pause)return;
         var clone=slides[0].cloneNode(true);
-        if(slides.length<2)return;
         clone.removeAttribute('data-slide');clone.setAttribute('data-slide-clone','');clone.setAttribute('aria-hidden','true');clone.inert=true;track.appendChild(clone);
         function schedule(){
             clearTimeout(timer);

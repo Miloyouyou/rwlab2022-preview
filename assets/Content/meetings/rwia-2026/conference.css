@@ -1,5 +1,123 @@
-:root{--navy:#143e68;--blue:#175884;--red:#a92335;--ink:#263747;--muted:#566c7d;--line:#d9e3eb;--paper:#f2f5f8}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:16px/1.85 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",Arial,sans-serif;color:var(--ink);background:var(--paper)}a{color:var(--blue);text-underline-offset:4px}a:hover{color:var(--red)}a:focus-visible{outline:3px solid #dd963b;outline-offset:4px}.wrap{width:min(1200px,calc(100% - 48px));margin:auto}.utility{background:var(--navy);color:white;font-size:14px}.utility .wrap{display:flex;justify-content:space-between;gap:20px;padding:8px 0}.utility a{color:white;text-decoration:none}.masthead{display:flex;gap:24px;align-items:center;padding:36px 0;background:white}.masthead:before{content:"";position:absolute;left:0;right:0;height:230px;background:white;z-index:-1}.masthead img{object-fit:contain;flex:none;width:82px;height:82px}.eyebrow{font-size:13px;font-weight:700;letter-spacing:.13em;color:var(--blue);margin:0 0 7px}.conference-title{font-size:clamp(23px,2.1vw,32px);font-weight:700;line-height:1.5;color:var(--navy);margin:0}.conference-title span{font-size:.84em}.conference-date{margin:12px 0 0;color:var(--red);font-size:18px;font-weight:600}.conference-nav{background:var(--navy);border-bottom:4px solid var(--red)}.conference-nav .wrap{display:flex;justify-content:space-between;flex-wrap:wrap}.conference-nav a{color:white;display:block;text-decoration:none;padding:14px 22px;font-weight:600}.conference-nav a:hover,.conference-nav a[aria-current]{background:#fff;color:var(--navy)}.page-grid{display:grid;grid-template-columns:250px minmax(0,1fr);gap:30px;align-items:start;padding-top:30px;padding-bottom:56px}.sidebar{background:white;border:1px solid var(--line);margin-bottom:20px;padding:20px}.sidebar h2{font-size:18px;margin:0 0 12px;color:var(--navy);padding-bottom:10px;border-bottom:2px solid var(--blue)}.sidebar>a{display:block;padding:8px 0;font-size:15px}.sidebar p{font-size:14px;margin:0;overflow-wrap:anywhere}main{background:white;border:1px solid var(--line);padding:30px 36px;min-width:0}.page-heading{border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:25px}h1{font-size:30px;line-height:1.4;margin:0;color:var(--navy)}h2{font-size:21px;color:var(--navy);line-height:1.5;margin:30px 0 14px}p{margin:0 0 18px}.lead{font-size:18px;line-height:1.9}.theme{border-left:4px solid var(--red);background:#f1f5f9;padding:20px 24px;margin:26px 0}.theme h2{font-size:15px;margin:0 0 5px;color:var(--red)}.theme p{font-size:21px;font-weight:600;color:var(--navy);margin:0}.topics{list-style:none;padding:0;margin:15px 0}.topics li{display:flex;gap:16px;padding:10px 0;border-bottom:1px solid #edf1f5;line-height:1.7}.topics span{flex:0 0 38px;color:var(--red);font-weight:700;font-size:14px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0}.button{display:inline-block;background:var(--blue);color:white;border:1px solid var(--blue);padding:9px 18px;text-decoration:none;font-weight:600}.button:hover{background:var(--navy);color:white}.button.secondary{background:white;color:var(--blue)}.date-list{margin:0}.date-list>div{padding:11px 0;border-bottom:1px solid var(--line)}dt{font-weight:600}.date-list dt{color:var(--muted);font-size:14px}.date-list dd{margin:2px 0 0;color:var(--navy);font-weight:600}.date-list>div:first-child dd{color:var(--red)}.steps{padding-left:24px}.steps li{padding:7px 0 7px 4px}.contact-box,.key-notice{background:#f1f5f9;border-left:3px solid var(--blue);padding:18px 22px;margin:24px 0}.contact-box p:last-child{margin:0}.organizations{padding-left:22px}.organizations li{margin:7px 0}.committee-list>div{padding:18px 0;border-bottom:1px solid var(--line)}.committee-list dt{color:var(--blue)}.committee-list dd{margin:6px 0 0}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;margin:20px 0;line-height:1.7;font-size:15px}th,td{text-align:left;padding:15px 12px;border-bottom:1px solid var(--line);vertical-align:top}th{background:#eaf0f6;color:var(--navy)}.fee{white-space:nowrap;font-weight:600;color:var(--red)}.downloads{list-style:none;padding:0}.downloads li{border-bottom:1px solid var(--line)}.downloads a{display:flex;justify-content:space-between;gap:20px;align-items:center;padding:22px 0;text-decoration:none;font-weight:600}.downloads span{flex:none;font-size:13px;color:var(--muted)}.contact-details{margin:30px 0}.contact-details>div{display:grid;grid-template-columns:105px 1fr;padding:14px 0;border-bottom:1px solid var(--line)}.contact-details dd{margin:0;overflow-wrap:anywhere}footer{background:var(--navy);color:white;padding:30px 0}footer p{margin:8px 0;font-size:14px}footer a{color:#fff;font-size:14px}.skip{position:absolute;top:-200px;background:white;padding:10px;z-index:10}.skip:focus{top:0}
-@media(min-width:1000px){html[lang=en] .conference-title{font-size:27px}html[lang=en] .conference-nav a{padding:14px 15px}}
-@media(max-width:900px){.page-grid{grid-template-columns:210px minmax(0,1fr);gap:20px}main{padding:25px}.conference-nav a{padding:12px 15px}.masthead{padding:25px 0}.masthead img{width:64px;height:64px}.wrap{width:calc(100% - 32px)}}
-@media(max-width:650px){.page-grid{display:flex;flex-direction:column;padding-top:18px;gap:22px}.page-grid>main{order:0;width:100%;padding:22px 18px}.page-grid>aside{order:1;width:100%;display:grid;gap:16px}.sidebar{margin:0}.masthead{align-items:flex-start;gap:12px;padding:24px 0}.masthead img{width:44px;height:44px;margin-top:5px}.conference-title{font-size:21px;line-height:1.55}.conference-title span{font-size:.85em}.conference-date{font-size:15px;margin-top:12px}.eyebrow{font-size:11px}.conference-nav .wrap{justify-content:flex-start;gap:0}.conference-nav a{font-size:14px;padding:10px 12px;flex:1 0 25%;text-align:center;white-space:nowrap}html[lang=en] .conference-nav a{flex:1 0 33.33%;font-size:13px;padding:10px 6px}h1{font-size:26px}h2{font-size:20px}.lead{font-size:16px}.theme{padding:16px}.theme p{font-size:18px}.contact-details>div{grid-template-columns:80px minmax(0,1fr)}th,td{padding:10px 6px;font-size:14px}.downloads a{gap:10px}.utility{font-size:12px}.topics li{gap:9px}.button{padding:8px 12px;font-size:15px}html[lang=en] .conference-title{font-size:19px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* RWIA 2024 conference family: compact white layout, blue/orange navigation,
+   green-ruled side panels. Text remains live and responsive in both languages. */
+:root{--nav:#06f;--heading:#076da8;--active:#f90;--green:#693;--ink:#333;--line:#ccc}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font:14px/1.8 Arial,"Microsoft YaHei","Noto Sans CJK SC",sans-serif}
+a{color:#2676b4;text-decoration:none;overflow-wrap:anywhere}
+a:hover{text-decoration:underline}
+a:focus-visible{outline:3px solid #b24b00;outline-offset:3px}
+.wrap{width:100%;max-width:1250px;margin:0 auto;padding:0 15px}
+.skip{position:absolute;left:15px;top:-80px;padding:8px 16px;background:white;z-index:10}
+.skip:focus{top:5px}
+.utility{background:#143e68;color:#fff;font-size:14px}
+.utility .wrap{display:flex;align-items:center;gap:28px;min-height:44px}
+.utility a{color:#fff}
+.masthead{position:relative;display:flex;align-items:center;gap:20px;min-height:148px;padding-top:12px;padding-bottom:10px}
+.masthead img{flex:0 0 auto;object-fit:contain}
+.masthead-text{flex:1;min-width:0}
+.conference-title{margin:0 72px 5px 0;color:var(--heading);text-align:center;font-size:34px;line-height:1.4;font-weight:700}
+.conference-title span{font-size:32px}
+.conference-date{margin:3px 0 0;text-align:right;color:#d21c17;font-size:20px;line-height:1.4;font-weight:700}
+.language{position:absolute;right:20px;top:17px;font-weight:700}
+html[lang=en] .conference-title{font-size:26px}
+html[lang=en] .conference-title span{font-size:24px}
+.conference-nav{background:var(--nav);border-radius:3px}
+.conference-nav .wrap{display:flex;align-items:stretch;justify-content:space-between;gap:20px}
+.nav-brand{display:flex;align-items:center;color:#fff;font-size:18px;font-weight:700;white-space:nowrap;min-height:50px}
+.nav-links{display:flex;flex-wrap:wrap;justify-content:flex-end}
+.conference-nav a{display:flex;align-items:center;padding:12px 15px;min-height:50px;color:#fff;line-height:1.5;text-decoration:none}
+.conference-nav a:hover,.conference-nav a:focus-visible,.conference-nav a[aria-current=page]{background:var(--active);color:#222}
+.conference-nav a:focus-visible{outline-color:#222;outline-offset:-4px}
+.page-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,3fr);gap:30px;padding-top:10px;padding-bottom:35px;align-items:start}
+.home-page .page-grid{grid-template-columns:minmax(0,1fr) minmax(0,2.105fr) minmax(0,1fr)}
+main,aside{min-width:0}
+main{padding:0;background:#fff}
+main:focus{outline:none}
+p{margin:0 0 12px;line-height:25px}
+h1,h2{font-size:18px;font-weight:400;line-height:1.5;color:var(--nav);margin:16px 0;padding:0 0 10px;border-bottom:2px solid #ddd}
+.page-heading h1{margin-top:7px}
+main h1::before,main h2::before{content:"➤";margin-right:8px;font-size:16px}
+.lead{font-size:14px;font-weight:400}
+.theme p{font-weight:700}
+.participate{height:70px;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 22px;background:#ff7900;color:#fff;font-size:26px;font-weight:700;border-radius:5px;box-shadow:4px 4px 5px #ddd}
+.participate:hover{color:#fff;background:#e86d00;text-decoration:none}
+.participate span{border:3px solid #fff;border-radius:50%;font-size:20px;width:35px;height:35px;line-height:29px;text-align:center}
+.sidebar{margin:10px 0 0;border:1px solid var(--line);border-radius:5px 5px 0 0;box-shadow:4px 4px 5px #ddd}
+.secondary-sidebar .sidebar:first-child{margin-top:0}
+.sidebar h2{margin:0;padding:8px 10px;border-bottom:2px solid var(--green);color:var(--ink);font-size:18px}
+.sidebar h2::before{content:"▸";margin-right:8px;color:#444}
+.sidebar p{padding:10px;margin:0}
+.side-links{padding:0 10px;margin:8px 0 12px;list-style:none}
+.side-links li{padding:5px 0;border-bottom:1px dotted var(--line);line-height:1.6;overflow-wrap:anywhere}
+.sidebar .date-list{padding:0 10px;margin:6px 0 10px}
+.date-list{margin:0 0 16px}
+.date-list>div{padding:8px 0;border-bottom:1px dotted var(--line)}
+.date-list dt{font-weight:400}
+.date-list dd{margin:0;font-weight:700}
+.date-list>div:first-child dd{color:#c42323}
+.topics{list-style:none;padding:0;margin:0 0 20px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px 22px}
+.topics li{position:relative;padding-left:13px;line-height:1.7;break-inside:avoid}
+.topics li::before{content:"•";position:absolute;left:0}
+.topics span{display:none}
+.steps{padding-left:24px}
+.steps li{margin:7px 0}
+.organizations{padding-left:22px}
+.committee-list>div,.contact-details>div{display:grid;grid-template-columns:140px minmax(0,1fr);gap:15px;border-bottom:1px dotted var(--line);padding:10px 0}
+.committee-list dt,.contact-details dt{font-weight:700}
+.committee-list dd,.contact-details dd{margin:0}
+.contact-box,.key-notice{padding:12px 16px;margin:16px 0;background:#f5f5f5;border-left:3px solid var(--green)}
+.contact-box p:last-child{margin-bottom:0}
+.key-notice{border-left-color:#ce7911}
+.table-wrap{max-width:100%;overflow-x:auto;margin-bottom:16px}
+table{width:100%;border-collapse:collapse;text-align:left;line-height:1.7}
+th{background:#eee;font-weight:700}
+th,td{padding:10px;border:1px solid #ddd;vertical-align:top;overflow-wrap:anywhere}
+.fee{white-space:nowrap;color:#b02621;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+.button{display:inline-block;padding:7px 14px;background:var(--nav);color:#fff;border:1px solid var(--nav);border-radius:3px}
+.button:hover{background:#0750bd;color:#fff;text-decoration:none}
+.button.secondary{background:#fff;color:#2676b4}
+.downloads{padding:0;list-style:none;margin:18px 0}
+.downloads li{border-bottom:1px dotted var(--line)}
+.downloads a{display:flex;justify-content:space-between;gap:20px;padding:12px 0}
+.downloads span{flex-shrink:0;color:#666}
+footer{background:#333;color:#fff;text-align:center;font-size:13px}
+.footer-links{background:#666;padding:9px 0}
+.footer-links .wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:25px}
+footer a{color:#fff}
+.footer-credit{padding-top:7px;padding-bottom:7px}
+@media(min-width:801px) and (max-width:1100px){
+ .conference-title{font-size:28px}.conference-title span{font-size:26px}
+ html[lang=en] .conference-title{font-size:23px}html[lang=en] .conference-title span{font-size:21px}
+ .conference-nav .wrap{gap:5px}.nav-brand{font-size:16px}.conference-nav a{padding:10px}
+ .home-page .page-grid{grid-template-columns:minmax(0,1fr) minmax(0,2fr)}
+ .secondary-sidebar{grid-column:2;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;align-items:start}
+ .primary-sidebar{grid-row:1 / span 2}.secondary-sidebar .sidebar{margin:0}
+}
+@media(max-width:800px){
+ .wrap{padding-left:15px;padding-right:15px}.utility .wrap{gap:12px;justify-content:space-between;font-size:12px}
+ .masthead{gap:12px;min-height:140px;padding-top:36px;padding-bottom:14px}
+ .masthead img{width:58px;height:58px}
+ .conference-title,.conference-title span{font-size:24px;margin-right:0}
+ html[lang=en] .conference-title,html[lang=en] .conference-title span{font-size:21px}
+ .conference-date{font-size:16px;text-align:center;margin-top:8px}.language{top:8px;right:15px;font-size:13px}
+ .conference-nav .wrap{display:block;padding:0}.nav-brand{padding:0 15px;min-height:40px}
+ .nav-links{justify-content:flex-start}.conference-nav a{padding:9px 14px;min-height:44px}
+ .page-grid,.home-page .page-grid{grid-template-columns:1fr;gap:20px;padding-top:15px}
+ main{grid-row:1}.secondary-sidebar{grid-row:2}.primary-sidebar{grid-row:3}
+ .inner-page .primary-sidebar{grid-row:2}
+ aside{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:start}
+ .sidebar,.secondary-sidebar .sidebar:first-child{margin:0}.participate{height:65px}
+}
+@media(max-width:480px){
+ .masthead img{width:44px;height:44px}.masthead{gap:9px}
+ .conference-title,.conference-title span{font-size:21px;line-height:1.5}
+ html[lang=en] .conference-title,html[lang=en] .conference-title span{font-size:18px}
+ .conference-date{font-size:14px}.utility span{display:none}
+ .nav-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+ .conference-nav a{justify-content:center;text-align:center;padding:8px 6px;font-size:13px}
+ .topics,aside{grid-template-columns:1fr}
+ .committee-list>div,.contact-details>div{grid-template-columns:1fr;gap:3px}
+ th,td{padding:7px 5px}.downloads a{gap:8px}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}

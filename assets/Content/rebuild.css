@@ -511,3 +511,56 @@ html{scroll-behavior:auto}
 .nav-inner a:hover{box-shadow:inset 0 -3px 0 #b2dcfa}
 .nav-inner a:focus-visible{outline-color:#fff;outline-offset:-4px}
 .footer-wordmark b,.footer-wordmark>span{color:#a9d7f5}
+
+/* Faculty and student profiles: a shared reading layout, without empty modules. */
+.profile-breadcrumb{border-bottom:1px solid var(--line);background:var(--surface)}
+.profile-breadcrumb .page-breadcrumb{margin:0;padding:18px 0;font-size:13px;color:var(--muted)}
+.profile-breadcrumb a:hover{color:var(--accent)}
+.person-profile{max-width:1080px;padding-block:48px 80px}
+.person-profile .profile-layout{grid-template-columns:180px minmax(0,1fr);gap:56px}
+.person-profile .profile-portrait{width:180px;height:230px;max-height:none;object-fit:contain;object-position:center top}
+.profile-copy{min-width:0}
+.profile-identity h1{margin:0 0 10px;font-size:36px;font-weight:650;line-height:1.3;color:var(--dark)}
+.profile-role{margin:0 0 8px;font-size:17px;color:var(--muted)}
+.profile-email{display:inline-flex;align-items:center;min-height:32px;color:var(--accent);font-size:15px;overflow-wrap:anywhere}
+.profile-email:hover{text-decoration:underline;text-underline-offset:4px}
+.person-profile .profile-body{margin-top:32px;font-size:16px;line-height:1.95;overflow:visible}
+.person-profile .profile-body h2{margin:42px 0 18px;padding:0 0 11px;border-bottom:1px solid var(--line);font-size:23px;line-height:1.5;font-weight:650;color:var(--dark)}
+.person-profile .profile-body h2:first-child{margin-top:0}
+.profile-body p{margin:0 0 16px}
+.profile-body ul{padding-left:1.25em;margin:0}
+.profile-body li{padding-left:.25em;margin:0 0 12px}
+.profile-body li::marker{color:var(--accent)}
+.profile-body strong{font-weight:600}
+.profile-body .profile-publications{padding-left:1.75em;margin:0}
+.profile-body .profile-publications li{padding-left:.5em;margin-bottom:22px;line-height:1.65}
+.profile-publications a{font-size:16px;font-weight:550;text-decoration:none}
+.profile-publications a:hover{text-decoration:underline;text-underline-offset:4px}
+.profile-publications span{display:block;font-size:14px;color:var(--muted);margin-top:6px;line-height:1.65}
+.profile-body .profile-honors{border-top:1px solid var(--line);padding-top:22px;margin-top:28px}
+.profile-honors p{margin-bottom:10px;color:var(--dark)}
+@media(max-width:900px){
+.person-profile .profile-layout{grid-template-columns:150px minmax(0,1fr);gap:32px}
+.person-profile .profile-portrait{width:150px;height:200px}
+}
+@media(max-width:760px){
+.profile-breadcrumb .page-breadcrumb{padding-block:14px;font-size:12px}
+.person-profile{width:calc(100% - 40px);padding-block:28px 48px}
+.person-profile .profile-layout{grid-template-columns:100px minmax(0,1fr);column-gap:22px;row-gap:0}
+.person-profile .profile-portrait{width:100px;height:136px}
+.profile-copy{display:contents}
+.profile-identity{align-self:center;min-width:0}
+.profile-identity h1{font-size:28px;margin-bottom:8px}
+.profile-role{font-size:14px;line-height:1.65;margin-bottom:4px}
+.profile-email{font-size:13px}
+.person-profile .profile-body{grid-column:1/-1;margin-top:30px;font-size:16px;line-height:1.9}
+.person-profile .profile-body h2{font-size:21px;margin-top:32px;margin-bottom:16px}
+.profile-publications a{font-size:15px}
+.profile-publications span{font-size:13px}
+}
+@media(max-width:360px){
+.person-profile{width:calc(100% - 32px)}
+.person-profile .profile-layout{grid-template-columns:84px minmax(0,1fr);column-gap:16px}
+.person-profile .profile-portrait{width:84px;height:116px}
+.profile-identity h1{font-size:25px}
+}

@@ -681,3 +681,6 @@ html{scroll-behavior:auto}
 .person-profile .profile-portrait{width:84px;height:116px}
 .profile-identity h1{font-size:25px}
 }
+.conference-current{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:30px;margin-bottom:36px;background:#edf3f8;border-left:4px solid #185783}
+.conference-current h2{font-size:26px;line-height:1.5;margin:8px 0 12px}.conference-current h2 a{color:#143e68;text-decoration:none}.conference-current p{margin:5px 0}.conference-current .conference-actions{flex-shrink:0;flex-wrap:wrap}
+@media(max-width:700px){.conference-current{display:block;padding:22px}.conference-current h2{font-size:22px}.conference-current .conference-actions{margin-top:18px}}
